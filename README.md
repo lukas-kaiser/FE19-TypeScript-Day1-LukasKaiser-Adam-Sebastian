@@ -1,0 +1,1 @@
+# FE19-TypeScript-Day1-LukasKaiser-Adam-Sebastian
