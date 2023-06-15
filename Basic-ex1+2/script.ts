@@ -20,3 +20,20 @@ let person2 = new Person("Peter", "Peterson", 32, "Petery Owner");
 
 console.log(person1.printInfo());
 console.log(person2.printInfo());
+
+class People extends Person{
+    salary: number;
+    location: string;
+
+    constructor (firstName : string, lastName : string, age : number, jobTitle : string, salary : number, location : string ){
+        super(firstName, lastName, age, jobTitle);
+        this.salary = salary;
+        this.location = location;
+    }
+    printMoreInfo() : string {
+        return this.printInfo() + `and I get ${this.salary} every month, and I work in ${this.location}`;
+    }
+}
+
+let people1 = new People("Fred", "Fredder", 33, "Fredwood Forester", 24000, "Fredland");
+console.log(people1.printMoreInfo());
