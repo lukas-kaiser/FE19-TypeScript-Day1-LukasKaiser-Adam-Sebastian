@@ -21,7 +21,7 @@ class People extends Person {
         this.location = location;
     }
     printMoreInfo() {
-        return this.printInfo() + `and I get ${this.salary} every month, and I work in ${this.location}`;
+        return this.printInfo() + ` and I get ${this.salary} every month, and I work in ${this.location}`;
     }
 }
 let people1 = new People("Fred", "Fredder", 33, "Fredwood Forester", 24000, "Fredland");

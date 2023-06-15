@@ -31,7 +31,7 @@ class People extends Person{
         this.location = location;
     }
     printMoreInfo() : string {
-        return this.printInfo() + `and I get ${this.salary} every month, and I work in ${this.location}`;
+        return this.printInfo() + ` and I get ${this.salary} every month, and I work in ${this.location}`;
     }
 }
 
